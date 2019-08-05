@@ -9,33 +9,47 @@
 
     <TextView
         android:id="@+id/display_vehicleInfo_tv"
-        android:layout_width="@dimen/tv_layout_width"
-        android:layout_height="@dimen/tv_layout_height"
-        android:layout_marginTop="@dimen/tv_layout_marginTop"
-        android:hint="Hello World!"
+        android:layout_width="273dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="48dp"
         android:gravity="center"
+        android:hint="Hello World!"
         android:textColor="@color/colorRed"
-        android:textStyle="bold"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/goto_secondActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/btn_marginEnd_dp"
-        android:layout_marginBottom="@dimen/btn_marginBottom_dp"
+        android:layout_marginBottom="56dp"
         android:text="@string/goto_secondActivity_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/display_vehicleInfo_tv"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="@+id/display_vehicleInfo_tv"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/display_vehicleInfo_tv" />
+
+    <TextView
+        android:id="@+id/tv_quiz"
+        android:layout_width="272dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
+        android:text="Would you like to play GUESS game?"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/goto_secondActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

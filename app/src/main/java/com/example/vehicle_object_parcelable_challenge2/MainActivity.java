@@ -12,11 +12,13 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView display_vehicleInfo;
     private Button goto_secondActivity;
+    private TextView start;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         display_vehicleInfo = findViewById(R.id.display_vehicleInfo_tv);
+        start = findViewById(R.id.tv_quiz);
         goto_secondActivity = findViewById(R.id.goto_secondActivity);
         goto_secondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK){
                 Vehicle car = data.getParcelableExtra("vehicleInfo");
                 display_vehicleInfo.setText("This Vehicle is of "+car.getMake()+" brand with "+car.getColor()+" color and has "+car.getNum_of_doors()+" doors");
+                display_vehicleInfo.setVisibility(View.VISIBLE);
+                start.setVisibility(View.INVISIBLE);
             }
             if (resultCode == RESULT_CANCELED){
 

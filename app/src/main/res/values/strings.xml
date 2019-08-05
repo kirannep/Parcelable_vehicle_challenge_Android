@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Vehicle_Object_Parcelable_Challenge2</string>
     <string name="goto_secondActivity_text">GO</string>
-    <string name="goto_firstactivity_text">Goto FirstActivity</string>
+    <string name="goto_firstactivity_text">Check your Answer!!!</string>
 </resources>
