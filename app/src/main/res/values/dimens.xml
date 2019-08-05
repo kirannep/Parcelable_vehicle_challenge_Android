@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_layout_width">277dp</dimen>
+    <dimen name="tv_layout_height">216dp</dimen>
+    <dimen name="tv_layout_marginTop">8dp</dimen>
+    <dimen name="btn_marginEnd_dp">8dp</dimen>
+    <dimen name="btn_marginBottom_dp">8dp</dimen>
+    <dimen name="btn_layout_width">201dp</dimen>
+    <dimen name="btn_layout_height">79dp</dimen>
+    <dimen name="btn_marginStart">8dp</dimen>
+    <dimen name="btn_layout_marginTop">8dp</dimen>
+    <dimen name="btn_layout_marginEnd">8dp</dimen>
+    <dimen name="btn_layout_marginBottom">8dp</dimen>
+</resources>
